@@ -6,7 +6,6 @@
   "deploy:polygon": "npx hardhat run --network matic scripts/deploy.ts ",
   "compile": "npx hardhat compile",
   "test": "npx hardhat test"
-  
   },
   
   "devDependencies": {
