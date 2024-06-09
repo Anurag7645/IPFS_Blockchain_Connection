@@ -8,8 +8,8 @@ class IPFSService {
         return axios
             .get(url, {
                 headers: {
-                    'pinata_api_key': import.meta.env.VITE_PINATA_KEY,
-                    'pinata_secret_api_key': import.meta.env.VITE_PINATA_KEY_SECRET
+                    'pinata_api_key': import.meta.env.VITE_PINATA_API_KEY,
+                    'pinata_secret_api_key': import.meta.env.VITE_PINATA_SECRET_KEY
                 }
             })
             .then(function (response) {
@@ -41,8 +41,8 @@ class IPFSService {
             {
                 headers: {
                     'Content-Type': `multipart/form-data; ; boundary=${formData._boundary}`,
-                    'pinata_api_key': import.meta.env.VITE_PINATA_KEY,
-                    'pinata_secret_api_key': import.meta.env.VITE_PINATA_KEY_SECRET
+                    'pinata_api_key': import.meta.env.VITE_PINATA_API_KEY,
+                    'pinata_secret_api_key': import.meta.env.VITE_PINATA_SECRET_KEY
                 }
             }
         )
